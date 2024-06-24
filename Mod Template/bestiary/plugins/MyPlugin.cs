@@ -30,7 +30,7 @@ namespace MyPlugin
         {
             // We will add some logic onto the Fly.Grabbed event, which is called when.... well.... a batfly is grabbed.
             // You don't need to do this normally, as creatures getting grabbed by the player is automatically tracked, this is just here for this example.
-            // You can see all the automatically tracked behaviours in the README.md file on GitHub
+            // You can see all the automatically tracked behaviours here: https://oxyaine.github.io/RainWorldBestiary/articles/misc/token-type.html
             On.Fly.Grabbed += Fly_Grabbed;
         }
 
