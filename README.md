@@ -1,1 +1,1 @@
-# RWBestiaryTemplate
+# [__Template Walkthrough__](https://oxyaine.github.io/RainWorldBestiary/articles/walkthrough.html)
