@@ -1,6 +1,6 @@
 {
     "name": "Tab titles also get translated!",
-    "title_image":{
+    "title_sprite":{
         "element_name": "illustrations\\my_bestiary_titles\\My_Tab_Title",
         "scale": 1,
         "x_offset": 0,
