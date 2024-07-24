@@ -15,7 +15,7 @@
         {
             "unlock_token": {
                 "token_type": 0,
-                "value": 1,
+                "count": 1,
                 "creature_id": "EntryTwo"
             },
             "text": "This text is always visible if the entry is visible! This will appear first!"
@@ -23,7 +23,7 @@
         {
             "unlock_token": {
                 "token_type": 0,
-                "value": 1,
+                "count": 1,
                 "creature_id": "EntryTwo"
             },
             "text": "Because there is no module with a null \"unlock id\", this entry will not be visible until one of the modules is unlocked!"

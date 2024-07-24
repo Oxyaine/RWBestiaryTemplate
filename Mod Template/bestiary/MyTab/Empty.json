@@ -21,6 +21,7 @@
       "body": "",
       "new_line": true,
       "translate": true,
+      "title": false,
       "unlock_pip_color": "FFFFFF"
     }
   ],
