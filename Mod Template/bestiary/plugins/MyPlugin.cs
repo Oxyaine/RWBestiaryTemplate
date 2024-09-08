@@ -7,7 +7,7 @@
 using RainWorldBestiary;
 // In the code below, this gives access to the `BestiaryPlugin` class
 using RainWorldBestiary.Plugins;
-// In the code below, this gives access to the `UnlockTokenType` enum
+// In the code below, this gives access to the `UnlockToken.Type` ExtEnum
 using RainWorldBestiary.Types;
 
 namespace MyPlugin
@@ -16,7 +16,7 @@ namespace MyPlugin
     // If you make a constructor for your custom class, make sure it also has a default constructor with no parameters, or an exception will be thrown
     public class MyBestiaryPlugin : BestiaryPlugin
     {
-        // Awake is called when the plugin is loaded, awake is called before start
+        // Awake is called when the plugin is loaded, awake is called before start, and is only called once
         public override void Awake()
         {
             // While you can put any code here, for this example we'll just initialize a custom class
@@ -28,7 +28,7 @@ namespace MyPlugin
     {
         public static void Initialize()
         {
-            // We will add some logic onto the Fly.Grabbed event, which is called when.... well.... a batfly is grabbed.
+            // We will add some logic onto the Fly.Grabbed event, which is called when a batfly is grabbed.
             // You don't need to do this normally, as creatures getting grabbed by the player is automatically tracked, this is just here for this example.
             // You can see all the automatically tracked behaviours here: https://oxyaine.github.io/RainWorldBestiary/articles/misc/token-type.html
             On.Fly.Grabbed += Fly_Grabbed;
@@ -45,9 +45,9 @@ namespace MyPlugin
                 // We will add a new unlock token to the bestiary
                 // Self is the creature that this unlock token is for, the bestiary automatically grabs the creature unlock name using Bestiary.GetCreatureUnlockName, however, you can also do:
                 // Bestiary.AddOrIncreaseToken(Bestiary.GetCreatureUnlockName(self), UnlockTokenType.PlayerGrabbed);
-                // UnlockTokenType.PlayerGrabbed is the type of token, this can be anything from the enum.
+                // UnlockTokenType.PlayerGrabbed is the type of token, this can be anything from the ExtEnum, or anything you've defined yourself.
                 // In this case, we want it to increase the token that tracks how many times the player has grabbed the this specific creature.
-                Bestiary.AddOrIncreaseToken(self, UnlockTokenType.PlayerGrabbed);
+                Bestiary.AddOrIncreaseToken(self, UnlockToken.Type.PlayerGrabbed);
             }
         }
     }

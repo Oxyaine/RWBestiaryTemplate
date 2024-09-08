@@ -1,0 +1,19 @@
+name = *creature display name*
+unlock id = *creature id*
+locked text = This entry is locked.
+entry icon = *path to icon*
+title sprite = *path to sprite*[scale=1:xOffset=0:yOffset=0]
+entry color = ffffff
+
+entry icons
+*path to icon*
+*path to icon 2*
+end
+
+description
+
+token = *token type*[creature=*creature id token is for*:count=*count*:data=*special data (seperated by commas)*:operation=*operation against value*]
+*text*
+*text2*[title:translate:color=ffffff]
+
+end
