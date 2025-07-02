@@ -1,3 +1,5 @@
+# DEPRECATED
+
 # Template
 
 The template is a template mod, meaning its an entire Rain World mod with the Bestiary entries added in. The purpose of this template is to show how entries should be placed in your mods folder.
